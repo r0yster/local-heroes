@@ -16,4 +16,9 @@ router.get('/register', (req, res) => {
     res.render('register')
 });
 
+router.get('/userOptions', (req, res) => {
+    //renders handlebars registration
+    res.render('userOptions')
+});
+
 module.exports = router;
