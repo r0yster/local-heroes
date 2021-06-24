@@ -6,6 +6,7 @@ router.get('/', (req, res) => {
     //renders handlebars index
     res.render('index')
 });
+
 router.get('/login', (req, res) => {
     //renders handlebars login
     res.render('login')
