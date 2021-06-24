@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     //renders handlebars index
-    res.render('index')
+    res.render('/index')
 });
 router.get('/login', (req, res) => {
     //renders handlebars login
@@ -20,5 +20,6 @@ router.get('/userOptions', (req, res) => {
     //renders handlebars registration
     res.render('userOptions')
 });
+
 
 module.exports = router;
