@@ -14,7 +14,7 @@ const db = mysql.createConnection({
 exports.register = (req, res) => {
     console.log(req.body);
 
-    const { firstName, lastName, email, password, passwordConfirm } = req.body;
+    const { firstName, lastName, email, password, passwordConfirm, city, state } = req.body;
 
 
     //one person with one email should be able to register one time -- future sequelize relationships to be made here
@@ -37,7 +37,7 @@ exports.register = (req, res) => {
         console.log(hashedPassword)
 
         //name:name first name is the db column name
-        db.query('INSERT INTO users SET ?', {first: firstName, last:lastName, email: email, password: hashedPassword}, (error, results) => {
+        db.query('INSERT INTO users SET ?', {first: firstName, last:lastName, email: email, city:city, state:state, password: hashedPassword}, (error, results) => {
                 if(error) {
                     console.log(error)
                 }
