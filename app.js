@@ -4,6 +4,7 @@ const express = require('express');
 const sequelize = require('./config/connection');
 const path = require('path');
 const app = express();
+const cookieParser = require('cookie-parser');
 
 const pagesRouter = require('./routes/pages');
 
