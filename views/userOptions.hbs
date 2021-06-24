@@ -15,38 +15,13 @@
         <h4> Local Heroes </h4>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/login">Login</a></li>
+            {{!-- <li><a href="/login">Login</a></li> --}}
             <li><a href="/register">Register</a></li>
         </ul>
     </nav>
-
-    <div class="container mt-4">
-        <div class="card">
-            <div class="card-header">
-            Login Form
-            </div>
-             <div class="card-body">
-                <form action="/auth/login" method="POST">
-                    
-                    <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
-                    </div>
-                   
-                    <button type="submit" class="btn btn-primary">Login</button>
-                </form>
-             </div>
-            </form>
-        </div>
+        <div>This is where the information of clicking are you a local </div>
+        
     </div>
-        {{#if message }}
-            <h6 class="alert alert-danger mt-4">{{message}}</h4>
-        {{/if}}
-
     </div>   
 
 
