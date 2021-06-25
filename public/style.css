@@ -1,36 +1,113 @@
-nav{
-    background-color: #116466;
-    color: #fff;
-    padding: 30px 60px;
-    display: flex;
-    justify-content: space-between;
+.homepageH1 {
+  font-family: Roboto;
+  font-style: Medium;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 98px;
+  color: #598b9d;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.homepageP {
+  /* font-family: Roboto; */
+  font-style: Medium;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  color: black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.heroContainer {
+  height: 75vh;
+}
+
+.heroRow {
+  height: 100%;
+}
+
+@media (max-width: 450px) {
+  .homepageH1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .homepageP {
+    font-size: 24px;
+  }
+}
+/* .display-4 {
+  position: absolute;
+  width: 741px;
+  height: 74px;
+  left: 205px;
+  top: 195px;
+
+  font-family: Roboto;
+  font-style: Medium;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 98px;
+  text-align: center;
+
+  color: #598b9d;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.lead {
+  position: absolute;
+  width: 442px;
+  height: 64px;
+  left: 355px;
+  top: 283px;
+
+  font-family: Roboto;
+  font-style: Medium;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+
+  color: black;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
+
+nav {
+  background-color: #116466;
+  color: #fff;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav ul {
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 nav li {
-    list-style: none;
+  list-style: none;
 }
 
 nav li a {
-    color:#fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 8px;
 }
 
 nav li a:hover {
-    color: yellow;
-    text-decoration: none;
+  color: yellow;
+  text-decoration: none;
 }
 
 body {
-    background-image: url('https://images.unsplash.com/photo-1520216287979-5dcf33e9f874?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80') ;
-    background-repeat: no-repeat;
-     background-attachment: fixed;
-      background-size: cover;
+  background-image: url("/assets/images/city.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
