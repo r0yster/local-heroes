@@ -14,13 +14,17 @@ VenueCategory.init(
         },
         category_id: {
             type: DataTypes.INTEGER,
-            references: 'category',
-            key: 'id'
+            references: { 
+                model: 'category',
+                key: 'id'
+            }
         },
         venue_id: {
             type: DataTypes.INTEGER,
-            references: 'venue',
-            key: 'id'
+            references: {
+                model: 'venue',
+                key: 'id'
+            }
         }
     },
     {

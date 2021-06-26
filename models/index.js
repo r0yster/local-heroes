@@ -1,7 +1,11 @@
 const User = require('./User');
+const UserInterests = require('./UserInterests');
+const UserVenues = require('./UserVenues');
 const Category = require('./Category');
 const Location = require('./Location');
 const Venue = require('./Venue');
+const VenueCategory = require('./VenueCategory');
+const VenueLocation = require('./VenueLocation');
 
 User.belongsTo(Location, {
     foreignKey: 'id'
@@ -37,13 +41,13 @@ Venue.belongsToMany(User, {
 
 Venue.belongsToMany(Category, {
     through: VenueCategory,
-    as: 'category',
+    as: 'category_id',
     foreignKey: 'id'
 });
 
 Category.belongsToMany(Venue, {
     through: VenueCategory,
-    as: 'category',
+    as: 'category_id',
     foreignKey: 'id'
 });
 
@@ -59,4 +63,5 @@ Location.belongsToMany(Venue, {
     foreignKey: 'id'
 });
 
-module.exports = { User, Category, Location, Venue };
+module.exports = { User, Category, Location, Venue,
+                    UserInterests, UserVenues, VenueCategory, VenueLocation };

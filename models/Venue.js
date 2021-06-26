@@ -22,7 +22,11 @@ Venue.init(
         },
         city: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            references: {
+                model: 'location',
+                key: 'name',
+            }
         },
         rating: {
             type: DataTypes.INTEGER,

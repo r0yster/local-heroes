@@ -14,8 +14,10 @@ VenueLocation.init(
         },
         city_id: {
             type: DataTypes.INTEGER,
-            references: 'location',
-            key: 'id'
+            references: {
+                model: 'location',
+                key: 'id'
+            }
         },
         venue_id: {
             type: DataTypes.INTEGER,
