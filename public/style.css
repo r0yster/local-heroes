@@ -1,25 +1,27 @@
 .homepageH1 {
-  font-family: Roboto;
-  font-style: Medium;
+  font-family: Nunito;
+  font-style: Sem-bold;
   font-weight: 600;
   font-size: 72px;
   line-height: 98px;
   color: #598b9d;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 0;
 }
 
 .homepageP {
-  /* font-family: Roboto; */
-  font-style: Medium;
+  font-family: Nunito;
+  font-style: Semi-bold;
   font-weight: 600;
   font-size: 36px;
   line-height: 49px;
-  color: black;
+  color:White;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .heroContainer {
   height: 75vh;
+  
 }
 
 .heroRow {
@@ -34,46 +36,15 @@
   .homepageP {
     font-size: 24px;
   }
+
+.home-btn {
+  display: flex !important;
+  flex-direction: row;
+  flex-direction: column;
+  inline-size: 450px;
+  word-wrap: normal;
 }
-/* .display-4 {
-  position: absolute;
-  width: 741px;
-  height: 74px;
-  left: 205px;
-  top: 195px;
-
-  font-family: Roboto;
-  font-style: Medium;
-  font-weight: 600;
-  font-size: 72px;
-  line-height: 98px;
-  text-align: center;
-
-  color: #598b9d;
-
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-
-
-.lead {
-  position: absolute;
-  width: 442px;
-  height: 64px;
-  left: 355px;
-  top: 283px;
-
-  font-family: Roboto;
-  font-style: Medium;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 49px;
-  text-align: center;
-
-  color: black;
-
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} */
 
 nav {
   background-color: #116466;
