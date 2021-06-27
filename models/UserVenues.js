@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection');
 
-class Venue extends Model {}
+class UserVenues extends Model {}
 
-Venue.init(
+UserVenues.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -12,21 +12,19 @@ Venue.init(
             primaryKey: true,
             autoIncrement: true
         },
-        category: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        name: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        city: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        rating: {
+        venue_id: {
             type: DataTypes.INTEGER,
-            allowNull: false
+            references: {
+                model: 'venue',
+                key: 'id'
+            }
+        },
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'user',
+                key: 'id'
+            }
         }
     },
     {
@@ -34,8 +32,8 @@ Venue.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'venue'
+        modelName: 'user_venues'
     }
 );
 
-module.exports = Venue;
+module.exports = UserVenues;
