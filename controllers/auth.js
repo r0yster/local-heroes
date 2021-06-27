@@ -1,4 +1,3 @@
-
 const mysql = require('mysql');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
@@ -89,7 +88,7 @@ exports.login = async (req, res) => {
                 res.cookie('jwt', token, cookieOptions);
 
                 //redirect here
-                res.status(200).redirect('/userOptions')
+                res.status(200).redirect('/')
         })
 
     }
