@@ -14,12 +14,26 @@
     <nav>
         <h4> Local Heroes </h4>
         <ul>
-            <li><a href="/">Home</a></li>
+            {{!-- <li><a href="/localHero">Local Hero</a></li> --}}
             {{!-- <li><a href="/login">Login</a></li> --}}
-            <li><a href="/register">Register</a></li>
+            <li><a href="#">Logout</a></li>
         </ul>
     </nav>
-        <div>This is where the information of clicking are you a local </div>
+        <div>Are you a:</div>
+         <div class="flex container">
+         
+            <a
+              class="d-block btn btn-dark btn-lg col-2 mx-auto"
+              href="/localHero"
+              role="button" 
+            >Local Hero</a>
+            <a
+              class="d-block btn btn-dark btn-lg col-2 mx-auto"
+              href="/local-heroes/views/tourist.hbs"
+              role="button"
+            >Tourist</a>
+          
+          </div>
         
     </div>
     </div>   
