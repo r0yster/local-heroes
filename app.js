@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const express = require('express');
+const routes = require('./routes');
 const sequelize = require('./config/connection');
 const path = require('path');
 const app = express();
@@ -23,7 +24,13 @@ app.set('view engine', 'hbs');
 
 //Define Routes
 app.get('/', (req, res) => res.render('index.hbs'));
+// <<<<<<< feature/testingLoginMethods
 app.use('/', require('./routes'))
+// =======
+// app.use('/', require('./routes/pages'));
+// app.use('/auth', require('./routes/auth'));
+// app.use(routes);
+// >>>>>>> develop
 
 sequelize.sync({ force: false }).then(() => {
 	console.log(`Sequelize connected to MySQL successfully.`);
