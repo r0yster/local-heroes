@@ -15,46 +15,57 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Nunito"
     />
-    <title>Login Landing</title>
+    <title>Local Heroes</title>
   </head>
+  
   <body>
-
-    {{! <nav>
+    
+ <div class="bg">
+    {{!-- <nav>
         <h4> Local Heroes </h4>
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/register">Register</a></li>
         </ul>
-    </nav> }}
+    </nav>  --}}
 
+<!-- Landing Page Hero Content -->
     <div class="container heroContainer">
       <div class="row heroRow justify-content-center text-center">
         <div class="col my-auto">
           <h1 class="homepageH1">Local Heroes</h1>
           <p class="homepageP">travel like a local</p>
-          <hr class="my-4" />
+          <hr class="my-4" >
           <p>A platform designed to make your traveling experience authentic and
             one-of-a-kind.
           
           </p>
           <div class="flex container">
          
+            {{!-- <button type="button"  
+              
+              href="/login"
+              role="button" >Login</button>
+            <button type="button">Register</button> --}}
+
             <a
-              class="d-block btn btn-dark btn-lg col-2 mx-auto"
+              class="d-block btn btn-dark btn-lg col-2 mx-auto homenav" 
               href="/login"
               role="button" 
             >Login</a>
             <a
-              class="d-block btn btn-dark btn-lg col-2 mx-auto"
+              class="d-block btn btn-dark btn-lg col-2 mx-auto homenav"
               href="/register"
               role="button"
-            >Register</a>
+            >Sign Up</a>
           
           </div>
         </div>
       </div>
     </div>
+
+   </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

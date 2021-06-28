@@ -19,25 +19,32 @@
             <li><a href="/">Logout</a></li>
         </ul>
     </nav>
-        <div>Are you a:</div>
+    <div class="row align-items-center" style = "text-align: center">
+        <div><h5>What are your interests?</h5></div>
     
-         <div class="flex container">
-         
-            <a
-              class="d-block btn btn-dark btn-lg col-2 mx-auto"
-              href="/interests"
-              role="button" 
-            >Local Hero</a>
-            <a
-              class="d-block btn btn-dark btn-lg col-2 mx-auto"
-              href="/interests"
+         <div class="flex container " style="margin-bottom: 1.5rem;">
+             <input type="checkbox" class="btn-check gy-2" id="foodAndBeverage"  unchecked autocomplete="off">
+            <label class="btn btn-interests btn-outline-dark" for="foodAndBeverage" >Food and Beverage</label><br>
+            
+            <input type="checkbox" class="btn-check" id="artsAndCulture" unchecked autocomplete="off">
+            <label class="btn btn-interests btn-outline-dark" for="artsAndCulture">Arts and Culture</label><br>
+            
+            <input type="checkbox" class="btn-check" id="music" unchecked autocomplete="off">
+            <label class="btn btn-interests btn-outline-dark" for="music">Music</label><br>
+            
+            <input type="checkbox" class="btn-check" id="history" unchecked autocomplete="off">
+            <label class="btn btn-interests btn-outline-dark" for="history">History</label><br>
+          </div>
+              <a
+              class="d-block btn btn-dark btn-sm col-2 mx-auto"
+              href="/profile"
               role="button"
-            >Tourist</a>
+            >Next</a>
           
           </div>
-        
     </div>
     </div>   
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
