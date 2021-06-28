@@ -51,6 +51,10 @@
   margin: 10px
 }
 
+.btn-lg {
+  font-size: 1rem;
+}
+
 /* .navbar {
   color: #6794A4;
 } */
