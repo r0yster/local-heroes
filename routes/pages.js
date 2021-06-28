@@ -25,14 +25,11 @@ router.get('/interests', (req, res) => {
     //renders handlebars registration
     res.render('interests')
 });
-router.get('/localHero', (req, res) => {
+router.get('/profile', (req, res) => {
     //renders handlebars registration
-    res.render('localHero')
+    res.render('profile')
 });
-router.get('/tourist', (req, res) => {
-    //renders handlebars registration
-    res.render('tourist')
-});
+
 
 
 module.exports = router;
