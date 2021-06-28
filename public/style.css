@@ -102,8 +102,8 @@ right: 5%;
 border-radius: 12px;
 border: none;
 opacity: 0.9;
-background-color: aliceblue;
-color: #598b9d;
+background-color: rgb(54, 55, 56);
+color: aliceblue;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-style: semi-bold;
 }
@@ -158,4 +158,8 @@ font-style: semi-bold;
  position: absolute;
  display: inline-flex;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  opacity: 0.8;
 }
