@@ -21,6 +21,10 @@ router.get('/userOptions', (req, res) => {
     //renders handlebars registration
     res.render('userOptions')
 });
+router.get('/interests', (req, res) => {
+    //renders handlebars registration
+    res.render('interests')
+});
 router.get('/localHero', (req, res) => {
     //renders handlebars registration
     res.render('localHero')
