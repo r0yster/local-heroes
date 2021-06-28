@@ -1,0 +1,143 @@
+.homepageH1 {
+  font-family: Nunito;
+  font-style: Sem-bold;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 98px;
+  color: #598b9d;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 0;
+}
+
+.homepageP {
+  font-family: Nunito;
+  font-style: Semi-bold;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  color:White;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.heroContainer {
+  height: 75vh;
+  
+}
+
+.heroRow {
+  height: 100%;
+}
+
+@media (max-width: 450px) {
+  .homepageH1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .homepageP {
+    font-size: 24px;
+  }
+
+.home-btn {
+  display: flex !important;
+  flex-direction: row;
+  flex-direction: column;
+  inline-size: 450px;
+  word-wrap: normal;
+}
+}
+
+nav {
+  background-color: #116466;
+  color: #fff;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 8px;
+}
+
+nav li a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+body {
+  background-image: url("/assets/images/city.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#card2 {
+  border-radius: 25px;
+  position: relative;
+  margin: 0;
+  top: 70%;
+  opacity: 0.6;
+}
+
+#card1 {
+padding: 8px;
+margin: 8%;
+text-align: center;
+width: 95%;
+right: 5%;
+border-radius: 12px;
+border: none;
+opacity: 0.8;
+}
+
+
+#submit {
+  padding: 8px;
+  margin: 0;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+  width: 12%;
+  border-radius: 10px;
+  background-color: #116466;
+  border: none  ;
+}
+
+.card-body {
+  width: 90px;
+  height: 390px;
+  border: none;
+}
+
+#password {
+  width: 80%;
+  position: absolute;
+  margin-top: 12%;
+  left: 10%;
+}
+
+#email {
+  width: 80%;
+  position: absolute;
+  margin-top: 2%;
+  left: 10%;
+  opacity: 1;
+}
+
+#label1 {
+  font-size: 25px;
+ padding: 10%;
+ margin-left: 45%;
+}
