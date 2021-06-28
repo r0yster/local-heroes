@@ -58,56 +58,74 @@
   .btn-lg {
     font-size: 1rem;
   }
+
+.home-btn {
+  display: flex !important;
+  flex-direction: row;
+  flex-direction: column;
+  inline-size: 450px;
+  word-wrap: normal;
+}
+
+
+.homenav {
+  min-width: 100px;
+  margin: 10px
+}
+
+.btn-lg {
+  font-size: 1rem;
+}
+
+/* .navbar {
+  color: #6794A4;
+} */
+
+nav {
   
-  /* .navbar {
-    color: #6794A4;
-  } */
-  
-  nav {
-    
-    color: #fff;
-    padding: 30px 60px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  nav li {
-    list-style: none;
-  }
-  
-  nav li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 8px;
-  }
-  
-  nav li a:hover {
-    color: yellow;
-    text-decoration: none;
-  }
-  
-  /* body {
-    background-image: url("/assets/images/city.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* background-size: 100% 100%; */
-    /* background-size: 100% auto; */
-  
-  
-  .bg { 
-    /* The image used */
-    background-image: url("/assets/images/city.jpg");
-    /* Full height */
-    height: 100%; 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  color: #fff;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 8px;
+}
+
+nav li a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+/* body {
+  background-image: url("/assets/images/city.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-size: 100% 100%; */
+  /* background-size: 100% auto; */
+
+
+.bg { 
+  /* The image used */
+  background-image: url("/assets/images/city.jpg");
+  /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
