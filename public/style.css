@@ -1,88 +1,113 @@
 .btn-interests {
-margin-bottom: 1rem;
-}
-
-.homepageH1 {
-  font-family: Nunito;
-  font-style: Sem-bold;
-  font-weight: 600;
-  font-size: 72px;
-  line-height: 98px;
-  color: #598b9d;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 0;
-}
-
-.homepageP {
-  font-family: Nunito;
-  font-style: Semi-bold;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 49px;
-  color:White;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.heroContainer {
-  height: 75vh;
+  margin-bottom: 1rem;
+  }
   
-}
-
-.heroRow {
-  height: 100%;
-}
-
-@media (max-width: 450px) {
   .homepageH1 {
-    font-size: 48px;
-    line-height: 60px;
+    font-family: Nunito;
+    font-style: Sem-bold;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 98px;
+    color: #598b9d;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 0;
   }
-  .homepageP {
-    font-size: 24px;
-  }
-
-.home-btn {
-  display: flex !important;
-  flex-direction: row;
-  flex-direction: column;
-  inline-size: 450px;
-  word-wrap: normal;
-}
-}
-
-nav {
   
-  color: #fff;
-  padding: 30px 60px;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-nav li {
-  list-style: none;
-}
-
-nav li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 8px;
-}
-
-nav li a:hover {
-  color: yellow;
-  text-decoration: none;
-}
-
-body {
-  background-image: url("/assets/images/city.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
+  .homepageP {
+    font-family: Nunito;
+    font-style: Semi-bold;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    color:White;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .heroContainer {
+    height: 75vh;
+    
+  }
+  
+  .heroRow {
+    height: 100%;
+  }
+  
+  @media (max-width: 450px) {
+    .homepageH1 {
+      font-size: 48px;
+      line-height: 60px;
+    }
+    .homepageP {
+      font-size: 24px;
+    }
+  
+  .home-btn {
+    display: flex !important;
+    flex-direction: row;
+    flex-direction: column;
+    inline-size: 450px;
+    word-wrap: normal;
+  }
+  }
+  
+  .homenav {
+    min-width: 100px;
+    margin: 10px
+  }
+  
+  .btn-lg {
+    font-size: 1rem;
+  }
+  
+  /* .navbar {
+    color: #6794A4;
+  } */
+  
+  nav {
+    
+    color: #fff;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  nav li {
+    list-style: none;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px;
+  }
+  
+  nav li a:hover {
+    color: yellow;
+    text-decoration: none;
+  }
+  
+  /* body {
+    background-image: url("/assets/images/city.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-size: 100% 100%; */
+    /* background-size: 100% auto; */
+  
+  
+  .bg { 
+    /* The image used */
+    background-image: url("/assets/images/city.jpg");
+    /* Full height */
+    height: 100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
