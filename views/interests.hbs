@@ -20,24 +20,38 @@
         </ul>
     </nav>
     <div class="row align-items-center" style = "text-align: center">
+        
+        <div><h5>Current City?</h5></div>    
+        <div class="location">
+            <input type="text" style="width:500px; background-color:transparent;" id="city">
+        </div>
+
+        <form class="signup-form">
+            <div>
+            <label for="username-signup">username:</label>
+            <input type="text" id="username-signup" />
+        </div>
+
         <div><h5>What are your interests?</h5></div>
     
-         <div class="flex container " style="margin-bottom: 1.5rem;">
-             <input type="checkbox" class="btn-check gy-2" id="foodAndBeverage"  unchecked autocomplete="off">
-            <label class="btn btn-interests btn-outline-dark" for="foodAndBeverage" >Food and Beverage</label><br>
+         <div class="flex container " style="margin-bottom: 1.5rem">
+            <input type="checkbox" class="btn-check gy-2" id="foodAndBeverage"  unchecked autocomplete="off">
+            <label class="btn btn-interests btn-outline-dark" for="foodAndBeverage" >Food and Beverage</label>
             
             <input type="checkbox" class="btn-check" id="artsAndCulture" unchecked autocomplete="off">
-            <label class="btn btn-interests btn-outline-dark" for="artsAndCulture">Arts and Culture</label><br>
+            <label class="btn btn-interests btn-outline-dark" for="artsAndCulture">Arts and Culture</label>
             
             <input type="checkbox" class="btn-check" id="music" unchecked autocomplete="off">
-            <label class="btn btn-interests btn-outline-dark" for="music">Music</label><br>
+            <label class="btn btn-interests btn-outline-dark" for="music">Music</label>
             
             <input type="checkbox" class="btn-check" id="history" unchecked autocomplete="off">
-            <label class="btn btn-interests btn-outline-dark" for="history">History</label><br>
+            <label class="btn btn-interests btn-outline-dark" for="history">History</label>
+
           </div>
+          
               <a
               class="d-block btn btn-dark btn-sm col-2 mx-auto"
-              href="/profile"
+              {{!-- href="/profile" --}}
               role="button"
             >Next</a>
           
@@ -49,7 +63,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
+<script src="/javascript/interests.js"></script>
 </body>
 </html>
 

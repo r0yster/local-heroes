@@ -1,5 +1,6 @@
 const express = require ('express');
 const router = express.Router();
+const { User } = require('../models');
 
 
 router.get('/', (req, res) => {
@@ -26,10 +27,14 @@ router.get('/interests', (req, res) => {
     res.render('interests')
 });
 router.get('/profile', (req, res) => {
-    //renders handlebars registration
-    res.render('profile')
+    User.findAll({})
+    .then(dbUserData => {
+        const users = dbUserData.map(user => user.get({ plain: true }));
+
+        res.render('profile', {
+            users
+        })
+    })
 });
-
-
 
 module.exports = router;
