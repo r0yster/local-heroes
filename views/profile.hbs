@@ -39,7 +39,12 @@
                     <div class="user-image" style = "text-align: center;">
                         <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEGfiNtfHTvuQ/profile-displayphoto-shrink_800_800/0/1542577114734?e=1630540800&v=beta&t=khLdpBRbyJRtSAfMki4LWwH5ZhP0jzTxIT8v2XlGcyk" class="img-radius col-6" alt="User-Profile-Image">
                     </div>
-                    <h6 class="f-w-600 m-t-25 m-b-10">Lex Crawford</h6>
+                   
+                    <h6 class="f-w-600 m-t-25 m-b-10">
+                      {{#each users as |user|}}
+                        <li>first name: {{user.firstName}}</li>
+                      {{/each}}
+                    </h6>
                     <p class="text-muted">Active | F | Easley,SC</p>
                     <hr>
                     <p class="text-muted m-t-15">Interests: Outdoors, Breweries, Sports</p>
