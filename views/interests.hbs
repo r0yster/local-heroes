@@ -50,8 +50,8 @@ const saveUserInterests = async () => {
     const listOfInterests = [];
     document.querySelectorAll(`.interest-item:checked`).forEach(el => {
         listOfInterests.push(el.value);
-    });
     console.log(listOfInterests);
+    });
     const response = await fetch('/profile/interests', {
         method: 'POST',
         body: JSON.stringify({ interests: listOfInterests }),
