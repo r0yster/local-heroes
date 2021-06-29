@@ -111,21 +111,27 @@ nav li a:hover {
   text-decoration: none;
 }
 
-/* body {
+body {
   background-image: url("/assets/images/city.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background-size: 100% 100%; */
+  background-size: 100% 100%;
   /* background-size: 100% auto; */
-
-
-.bg { 
-  /* The image used */
-  background-image: url("/assets/images/city.jpg");
-  /* Full height */
-  height: 100%; 
-  /* Center and scale the image nicely */
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
+
+/* .bg { 
+  /* The image used */
+  /* background-image: url("/assets/images/city.jpg"); */
+  /* Full height */
+  /* height: auto;  */
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; */
+/* }  */
