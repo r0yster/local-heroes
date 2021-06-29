@@ -160,6 +160,24 @@ font-style: semi-bold;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav {
-  opacity: 0.8;
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; 
+  margin-left: 50%;
+  padding-right: 5%;
+  margin-top: 0px;
+
 }
+
+h4 {
+  color: rgb(252, 247, 241);
+  padding: 10px;
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 40%;
+}
+
