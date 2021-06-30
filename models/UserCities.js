@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection');
 
-class UserInterests extends Model {}
+class UserCities extends Model {}
 
-UserInterests.init(
+UserCities.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -12,10 +12,10 @@ UserInterests.init(
             primaryKey: true,
             autoIncrement: true
         },
-        category_id: {
+        city_id: {
             type: DataTypes.INTEGER,
             references: {
-                model: 'category',
+                model: 'city',
                 key: 'id'
             }
         },
@@ -26,15 +26,14 @@ UserInterests.init(
                 key: 'id'
             }
         },
-  
     },
     {
         sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        moduleName: 'user_interests'
+        moduleName: 'user_cities'
     }
 );
 
-module.exports = UserInterests;
+module.exports = UserCities;

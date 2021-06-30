@@ -35,17 +35,12 @@
                 <div class="card-header">
                     <h5>Profile</h5>
                 </div>
-                <div class="card-block">
+                <div class="card-block" style = "text-align: center;">
                     <div class="user-image" style = "text-align: center;">
-                        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEGfiNtfHTvuQ/profile-displayphoto-shrink_800_800/0/1542577114734?e=1630540800&v=beta&t=khLdpBRbyJRtSAfMki4LWwH5ZhP0jzTxIT8v2XlGcyk" class="img-radius col-6" alt="User-Profile-Image">
+                        <img src="https://previews.123rf.com/images/happyvector071/happyvector0711904/happyvector071190414500/120957417-creative-illustration-of-default-avatar-profile-placeholder-isolated-on-background-art-design-grey-p.jpg" class="img-radius col-6" alt="User-Profile-Image">
                     </div>
                    
-                    <h6 class="f-w-600 m-t-25 m-b-10">
-                      {{#each users as |user|}}
-                        <li>first name: {{user.firstName}}</li>
-                      {{/each}}
-                    </h6>
-                    <p class="text-muted">Active | F | Easley,SC</p>
+                    <p class="text-muted">Active | M | San Antonio, TX</p>
                     <hr>
                     <p class="text-muted m-t-15">Interests: Outdoors, Breweries, Sports</p>
                     <ul class="list-unstyled activity-leval">
@@ -59,11 +54,11 @@
                         <div class="row">
                             <div class="col-4">
                                 <i class="fa fa-comment"></i>
-                                <p>1256</p>
+                                <p>342</p>
                             </div>
                             <div class="col-4">
                                 <i class="fa fa-user"></i>
-                                <p>8562</p>
+                                <p>123</p>
                             </div>
                             <div class="col-4">
                                 <i class="fa fa-suitcase"></i>
@@ -71,7 +66,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="m-t-15 text-muted">My name is Lexie. I enjoy traveling and also hosting others that visit my hometown here in Easley, SC. When I travel I enjoy seeking outdoor adventures, connecting with others, and grabbing a cold beer to end a day of adventuring! 🍺🏞️
+                    <p class="m-t-15 text-muted">My name is Roy. I enjoy traveling and also hosting others that visit my hometown here in San Antonio, TX. When I travel I enjoy seeking outdoor adventures, connecting with others, and grabbing a cold beer to end a day of adventuring! 🍺🏞️
                     </p>
                     <hr>
                     <div class="row justify-content-center user-social-link">
@@ -79,31 +74,28 @@
                         <div class="col-auto"><a href="#!"><i class="fa fa-twitter text-twitter"></i></a></div>
                         <div class="col-auto"><a href="#!"><i class="fa fa-dribbble text-dribbble"></i></a></div>
                     </div>
+                    <div class = "mb-2"></div>
                 </div>
+              </div>
             </div>
+                  <div class="col-2"></div>
+                 <div class="card" style="width: 18rem;">
+                     <div class="card-body">
+                  <h5 class="card-title">Meet others in the area with same interests!</h5>
+                  <h6 class="card-subtitle mb-2 mt-2 text-muted">Connect with other Local Heroes</h6>
+                  <p class="card-text">{{#each users as |user|}}
+                                      <li>User: {{user.first_name}} {{user.last_name}}</li>
+                                    {{/each}}</p>
+                        <a href="#" class="card-link">Visit Profile</a>
+                  <a href="#" class="card-link">Message</a>
+                </div>
         </div>
 
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each users as |user|}}
-        {{!-- {{#if user.city}} --}}
-          <tr>
-            <td>{{ user.firstName }}</td>
-            <td>{{ user.lastName }}</td>
-            <td>{{ user.email }} </td>
-          </tr>
-        {{/each}}          
-      </tbody>
-    </table>
+        </div>
+      </div>
     </div>
-  </div>
+      
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
