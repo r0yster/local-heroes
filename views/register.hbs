@@ -16,46 +16,43 @@
 <body>
  
     <nav>
-        <h4 class="loginpageH1"> Local Heroes </h4>
+        <h4 id="localheroes"> Local Heroes </h4>
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/login">Login</a></li>
             <li><a href="/register">Register</a></li>
         </ul>
-    </nav> 
+    </nav>
 
     <div class="container mt-4">
-        <div class="card">
-            <div class="card-header">
-            Register Form
-            </div>
-             <div class="card-body">
+        
+             <div class="card" id="card4">
                 <form action="/auth/register" method="POST">
                     <div class="form-group">
-                        <label for="firstName">First name</label>
+                        <label for="firstName" id="label3">First name</label>
                         <input type="text" class="form-control" id="firstName"  name="firstName" placeholder="Enter name">
                     </div>
                     <div class="form-group">
-                        <label for="lastName">Last name</label>
+                        <label for="lastName" id="label4">Last name</label>
                         <input type="text" class="form-control" id="lastName"  name="lastName" placeholder="Enter name">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email address</label>
+                        <label for="email" id="label5">Email address</label>
                         <input type="email" class="form-control" id="email" name="email"placeholder="Enter your email address">
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
+                        <label for="password" id="label6">Password</label>
                         <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
                     </div>
                     <div class="form-group">
-                        <label for="passwordConfirm">Confirm Password</label>
+                        <label for="passwordConfirm" id="label7">Confirm Password</label>
                         <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" placeholder="Please re-enter your password.">
                     </div>
-                    <div class="form-group col-md-2">
-                                <label for="city" class="form-label" placeholder="City">City</label>
+                    <div class="form-group col-md-2" id="citystate">
+                                <label for="city" class="form-label" placeholder="City" id="label8">City</label>
                                 <input type="text" class="form-control" id="city" name="city">
                     
-                                <label for="state" class="form-label">State</label>
+                                <label for="state" class="form-label" id="label9">State</label>
                                 <select id="state" class="form-select" name="state">
                                 <option selected>Choose...</option>
                                 	<option value="">N/A</option>
@@ -113,10 +110,36 @@
 			<option value="WY">Wyoming</option>
                                 </select>
                    </div>
-                    <button type="submit" class="btn btn-primary">Register User</button>
+                    <button type="submit" class="btn btn-primary" id="registerbtn">Register User</button>
                 </form>
              </div>
         </div>
+        <div class="footer">
+        <footer>
+            &copy; 2021 Local-Heroes, Inc.
+        </footer>
+    </div>
+            
+                
+                           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
         {{#if message }}

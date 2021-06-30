@@ -1,3 +1,42 @@
+.homepageH1 {
+  font-family: Nunito;
+  font-style: Sem-bold;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 98px;
+  color: #598b9d;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 0;
+}
+
+.homepageP {
+  font-family: Nunito;
+  font-style: Semi-bold;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  color:White;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.heroContainer {
+  height: 75vh;
+  
+}
+
+.heroRow {
+  height: 100%;
+}
+
+@media (max-width: 450px) {
+  .homepageH1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .homepageP {
+    font-size: 24px;
+  }
+
 .btn-interests {
   margin-bottom: 1rem;
   }
@@ -31,7 +70,8 @@
   .heroRow {
     height: 100%;
   }
-  
+}
+
   @media (max-width: 450px) {
     .homepageH1 {
       font-size: 48px;
@@ -67,6 +107,10 @@
   word-wrap: normal;
 }
 
+
+nav {
+  background-color: #116466;
+}
 
 .homenav {
   min-width: 100px;
@@ -123,7 +167,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: yellow;
+  color: #0a4142;
   text-decoration: none;
 }
 
@@ -131,23 +175,296 @@ body {
   background-image: url("/assets/images/city.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
-  /* background-size: 100% auto; */
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+}
+
+#card2 {
+  border-radius: 25px;
+  position: relative;
+  margin: 0;
+  top: 70%;
+  background-color: rgb(252, 242, 228);
+  border: none;
+  opacity: 0.8;
+}
+
+
+
+#submit {
+  padding: 8px;
+  margin: 0;
+  position: absolute;
+  top: 85%;
+  left: 44%;
+  width: 12%;
+  border-radius: 10px;
+  background-color: #116466;
+  border: none  ;
+  font-weight: bold;
+}
+
+#submit:hover {
+  background-color: rgb(229, 243, 243);
 
 }
 
-/* .bg { 
-  /* The image used */
-  /* background-image: url("/assets/images/city.jpg"); */
-  /* Full height */
-  /* height: auto;  */
-  /* Center and scale the image nicely */
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%; */
-/* }  */
+.card-body {
+  width: 85px;
+  height: 390px;
+  border: none;
+}
+
+#password1 {
+  width: 80%;
+  position: absolute;
+  margin-top: 18%;
+  left: 10%;
+  border: none;
+}
+
+#email1 {
+  width: 80%;
+  position: absolute;
+  margin-top: 6%;
+  left: 10%;
+  border: none;
+}
+
+#label1 {
+  font-size: 25px;
+ padding: 2%;
+ margin-left: 39%;
+ margin-bottom: 80%;
+ width: 80%;
+ position: absolute;
+ display: inline-flex;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-weight: bolder;
+ color: #0a4142;
+}
+
+#label2 {
+  font-size: 25px;
+  position: absolute;
+  display: inline-flex;
+  margin-top: 14%;
+  margin-left: 43%;
+  font-weight: bolder;
+  color: #0a4142;
+}
+
+ nav h4 ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; 
+}
+
+ul {
+    margin-left: 40%;
+    margin-right: 5%;
+    margin-top: 2%;
+    font-size: 15px;
+}
+#localheroes {
+  color: rgb(252, 247, 241);
+  padding: 10px;
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 100%;
+  font-weight: bold;
+}
+
+
+nav {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  background: none;
+}
+
+.footer {
+  color: antiquewhite;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 82%;
+  margin-top: 2%;
+}
+
+#card4 {
+  border-radius: 25px;
+  position: relative;
+  margin: 0;
+  top: 70%;
+  background-color: rgb(252, 242, 228);
+  border: none;
+  opacity: 0.8;
+}
+
+
+#lastName {
+  width: 80%;
+  margin: 0%;
+  margin-left: 8%;
+  border: none;
+}
+
+#firstName {
+  width: 80%;
+  margin: 0%;
+  margin-left: 8%;
+  border: none;
+}
+
+#email {
+  width: 80%;
+margin: 0%; 
+ margin-left: 8%;
+  border: none;
+}
+
+#password  {
+  width: 80%;
+  margin: 0%;
+  margin-left: 8%;
+  border: none;
+}
+
+#passwordConfirm  {
+  width: 80%;
+  margin: 0%;
+  margin-left: 8%;
+  border: none;
+}
+
+
+#label3 {
+  font-size: 15px;
+  padding: 1%;
+  width: 80%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8%;
+  color: #0a4142;
+}
+
+#label4 {
+  font-size: 15px;
+  padding: 1%;
+  width: 80%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8%;
+  color: #0a4142;
+  margin-top: 1%;
+}
+
+#label5 {
+  font-size: 15px;
+  padding: 1%;
+  width: 80%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8%;
+  color: #0a4142;
+  margin-top: 1%;
+}
+
+#label6 {
+  font-size: 15px;
+  padding: 1%;
+  width: 80%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8%;
+  color: #0a4142;
+  margin-top: 1%;
+}
+
+#label7 {
+  font-size: 15px;
+  padding: 1%;
+  width: 80%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8%;
+  color: #0a4142;
+  margin-top: 1%;
+}
+
+#citystate {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-decoration: none;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  margin-left: 8%;
+  padding: 2%;
+}
+
+
+#label8 {
+  font-size: 15px;
+  padding: 1%;
+  width: 80%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0%;
+  color: #0a4142;
+  margin-top: 1%;
+}
+
+#label9 {
+  font-size: 15px;
+  padding: 1%;
+  width: 80%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8%;
+  color: #0a4142;
+  margin-top: 1%;
+}
+
+#registerbtn {
+  padding: 8px;
+  margin: 0;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  width: 20%;
+  border-radius: 10px;
+  background-color: #116466;
+  border: none  ;
+  font-weight: bold;
+}
+
+#registerbtn:hover {
+  background-color: antiquewhite;
+}
