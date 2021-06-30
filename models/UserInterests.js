@@ -25,7 +25,14 @@ UserInterests.init(
                 model: 'user',
                 key: 'id'
             }
-        }
+        },
+        // user_hometown: {
+        //     type: DataTypes.STRING,
+        //     references: {
+        //         model: 'user',
+        //         key: 'city'
+        //     }
+        // }
     },
     {
         sequelize,
