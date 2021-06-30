@@ -13,13 +13,7 @@ const seedAll = async() => {
     await seedCategories();
 
     console.log('\n----- CATEGORIES SEEDED -----\n');
-    await seedLocations();
-
-    console.log('\n----- LOCATIONS SEEDED -----\n');
-    await seedVenues();
-
-    console.log('\n----- VENUES SEEDED -----\n');
-    await seedUsers();
+    // await seedLocations();
     
     console.log('\n----- USERS SEEDED -----\n');
 
