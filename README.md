@@ -18,7 +18,7 @@ I WANT to connect with local people <br>
 SO THAT I can enhance my traveling through authentic experiences.
 
 # Wireframe
-
+![ ](public/assets/images/wireframe.jpg)
 # Installation
 To install please visit the [Local Heroes](https://github.com/r0yster/local-heroes) and look at the uploaded files via GitHub Deployment. You may fork the repository and download [Node.js](https://nodejs.org/en/) Additionally, you will need [Visual Studio Code](https://code.visualstudio.com/), [npm](https://www.npmjs.com/), and [Express](https://www.npmjs.com/package/express).The details of how to implement these are provided in the [Usage](#Usage) section below.
 
