@@ -82,6 +82,7 @@ router.post('/login', async (req, res) => {
 
 		res.cookie('jwt', token, cookieOptions);
 
+	
 		//redirect here
 		res.status(200).redirect('/userOptions');
 	} catch (err) {

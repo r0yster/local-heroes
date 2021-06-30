@@ -5,7 +5,13 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "start": "nodemon app.js"
+=======
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "seed": "node seeds/index.js"
+>>>>>>> dab2ac99711d7001180c5f6a2a88bca1aac113c5
   },
   "keywords": [],
   "author": "",
