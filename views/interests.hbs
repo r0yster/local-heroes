@@ -24,6 +24,12 @@
   
 
     <div class="row align-items-center" style = "text-align: center">
+        
+        <div><h5>Current City?</h5></div>    
+        <div class="location">
+            <input type="text" style="width:500px; background-color:transparent;" id="city">
+        </div>
+
         <div><h5>What are your interests?</h5></div>
     
          <div class="flex container " style="margin-bottom: 1.5rem;">
@@ -33,6 +39,7 @@
                     {{interest.category_name}}
                 </label><br>
             {{/each}}
+
             <div class = "col-md">
                 <label for="city">Select a city that you will visit: </label>
                  <select name="city" id="city">
@@ -49,6 +56,7 @@
                 role="button"
                 >Next</a>
             </div>
+
     </div>
 </div>   
 
@@ -84,11 +92,3 @@
 </script>
 </body>
 </html>
-
-{{!-- 
-DB heroku_42320a913f430e2
-host us-cdbr-east-04.cleardb.com/
-Username bd91571230c47c
-Password 34e684cf 
-CLEARDB_DATABASE_URL mysql://bd91571230c47c:34e684cf@us-cdbr-east-04.cleardb.com/heroku_42320a913f430e2?reconnect=true
-Host --}}

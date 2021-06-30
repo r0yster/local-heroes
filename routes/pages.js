@@ -31,5 +31,4 @@ router.get('/interests', async (req, res) => {
 });
 
 
-
 module.exports = router;
