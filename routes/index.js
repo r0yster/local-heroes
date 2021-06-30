@@ -2,11 +2,12 @@ const router = require('express').Router();
 
 const pagesRouter = require('./pages');
 const authRouter = require('./auth');
-const apiRoutes = require('./api');
+const profileRouter = require('./profile');
+const { isAuth, retrieveClaims } = require('../middlewares/isAuth');
 
 //Define Routes
 router.use('/', pagesRouter);
 router.use('/auth', authRouter);
-router.use('/api', apiRoutes);
+router.use('/profile', isAuth, retrieveClaims,  profileRouter);
 
 module.exports = router;

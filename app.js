@@ -31,6 +31,10 @@ app.use('/', require('./routes'))
 // app.use('/auth', require('./routes/auth'));
 // app.use(routes);
 
+// hbs.handlebars.registerHelper('checkLocation', function(str1) {
+// 	if (str1 === 'San Antonio')
+// 	return price;
+//   })
 
 sequelize.sync({ force: false }).then(() => {
 	console.log(`Sequelize connected to MySQL successfully.`);
