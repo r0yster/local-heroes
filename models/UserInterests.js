@@ -25,6 +25,9 @@ UserInterests.init(
                 model: 'user',
                 key: 'id'
             }
+        },
+        selected_city: {
+            type: DataTypes.STRING
         }
     },
     {
