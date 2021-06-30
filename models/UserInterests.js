@@ -26,13 +26,7 @@ UserInterests.init(
                 key: 'id'
             }
         },
-<<<<<<< HEAD
-        selected_city: {
-            type: DataTypes.STRING
-        }
-=======
   
->>>>>>> 98116f7dee995279aa0699dd3c8625305474b912
     },
     {
         sequelize,
