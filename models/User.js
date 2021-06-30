@@ -78,8 +78,4 @@ User.init(
 	}
 );
 
-<<<<<<< HEAD
-=======
-
->>>>>>> dab2ac99711d7001180c5f6a2a88bca1aac113c5
 module.exports = User;

@@ -1,8 +1,4 @@
 const User = require('./User');
-<<<<<<< HEAD
-
-module.exports = { User };
-=======
 const UserInterests = require('./UserInterests');
 const Category = require('./Category');
 
@@ -67,4 +63,3 @@ module.exports = {
     Category,
     UserInterests,
 };
->>>>>>> dab2ac99711d7001180c5f6a2a88bca1aac113c5

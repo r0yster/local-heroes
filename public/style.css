@@ -198,7 +198,7 @@ body {
   border: none;
 }
 
-#password {
+#password1 {
   width: 80%;
   position: absolute;
   margin-top: 18%;
@@ -206,7 +206,7 @@ body {
   border: none;
 }
 
-#email {
+#email1 {
   width: 80%;
   position: absolute;
   margin-top: 6%;
@@ -275,4 +275,52 @@ nav {
   flex-wrap: wrap;
   margin-left: 82%;
   margin-top: 2%;
+}
+
+#card4 {
+  border-radius: 25px;
+  position: relative;
+  margin: 0;
+  top: 70%;
+  background-color: rgb(252, 242, 228);
+  border: none;
+  opacity: 0.8;
+}
+
+#label3 {
+}
+
+#lastName {
+  width: 80%;
+  margin-top: 4%;
+  margin-left: 8%;
+  border: none;
+}
+
+#firstName {
+  width: 80%;
+  margin-top: 2%;
+  margin-left: 8%;
+  border: none;
+}
+
+#email {
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 8%;
+  border: none;
+}
+
+#password  {
+  width: 80%;
+  margin-top: 6%;
+  margin-left: 8%;
+  border: none;
+}
+
+#passwordConfirm  {
+  width: 80%;
+  margin-top: 6%;
+  margin-left: 8%;
+  border: none;
 }
