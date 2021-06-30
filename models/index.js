@@ -1,6 +1,8 @@
 const User = require('./User');
 const UserInterests = require('./UserInterests');
 const Category = require('./Category');
+const City = require('./City');
+const UserCities = require('./UserCities');
 
 // User.belongsTo(Location, {
 //     foreignKey: 'city'
@@ -62,4 +64,6 @@ module.exports = {
     User,
     Category,
     UserInterests,
+    City,
+    UserCities
 };
