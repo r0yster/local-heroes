@@ -1,11 +1,6 @@
 const User = require('./User');
 const UserInterests = require('./UserInterests');
-const UserVenues = require('./UserVenues');
 const Category = require('./Category');
-const Location = require('./Location');
-const Venue = require('./Venue');
-const VenueCategory = require('./VenueCategory');
-const VenueLocation = require('./VenueLocation');
 
 // User.belongsTo(Location, {
 //     foreignKey: 'city'
@@ -63,5 +58,8 @@ const VenueLocation = require('./VenueLocation');
 //     foreignKey: 'id'
 // });
 
-module.exports = { User, Category, Location, Venue,
-                    UserInterests, UserVenues, VenueCategory, VenueLocation };
+module.exports = {
+    User,
+    Category,
+    UserInterests,
+};
