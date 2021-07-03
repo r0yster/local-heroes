@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito"
+    />
+    <title>Login Landing</title>
+</head>
+<body>
+ 
+    <nav>
+        <h4 class="navH1"> Local Heroes </h4>
+        <ul>
+            {{!-- <li><a href="/localHero">Local Hero</a></li> --}}
+            {{!-- <li><a href="/login">Login</a></li> --}}
+            <li><a href="/">Logout</a></li>
+        </ul>
+    </nav>
+
+     
+  
+
+    <div class="row align-items-center" style = "text-align: center">
+        
+        <div><h5>Current City?</h5></div>    
+        <div class="location">
+            <input type="text" style="width:500px; background-color:transparent;" id="city">
+        </div>
+
+        <div><h5>What are your interests?</h5></div>
+    
+         <div class="flex container " style="margin-bottom: 1.5rem;">
+            {{#each interests as |interest|}}
+                <input type="checkbox" class="btn-check gy-2 interest-item" id="elem-{{interest.id}}" value="{{interest.id}}" />
+                <label class="btn btn-interests btn-outline-dark" for="elem-{{interest.id}}">
+                    {{interest.category_name}}
+                </label><br>
+            {{/each}}
+
+            <div class = "col-md">
+                <label for="city">Select a city that you will visit: </label>
+                 <select name="city" id="city">
+                     {{#each cities as |city|}}
+                        <option value="{{city.id}}">{{city.name}}</option>
+                    {{/each}}
+                 </select>
+            </div>
+            </div>
+                <a
+                class="d-block btn btn-dark btn-sm col-2 mx-auto"
+                href="#"
+                onclick="saveUserInterests()"
+                role="button"
+                >Next</a>
+            </div>
+
+    </div>
+</div>   
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script>
+
+    const saveUserInterests = async () => {
+        const interests = [];
+        const cityId = document.getElementById('city').value;
+        if (!cityId) {
+            return alert('Please enter a city');
+        }
+        document.querySelectorAll(`.interest-item:checked`).forEach(el => {
+            interests.push(el.value);
+        });
+
+        const response = await fetch('/profile/interests', {
+            method: 'POST',
+            body: JSON.stringify({ interests, cityId }),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+        });
+        const responseBody = await response.json();;
+        console.log(responseBody);
+        if (responseBody.msg === 'ok') {
+            location.href ='/profile';
+        }
+    };
+
+</script>
+</body>
+</html>
