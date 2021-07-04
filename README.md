@@ -23,7 +23,7 @@ SO THAT I can enhance my traveling through authentic experiences.
 To install please visit the [Local Heroes](https://github.com/r0yster/local-heroes) and look at the uploaded files via GitHub Deployment. You may fork the repository and download [Node.js](https://nodejs.org/en/) Additionally, you will need [Visual Studio Code](https://code.visualstudio.com/), [npm](https://www.npmjs.com/), and [Express](https://www.npmjs.com/package/express).The details of how to implement these are provided in the [Usage](#Usage) section below.
 
 # Usage   
-To experience Local Heroes please visit our launched application via  **HEROKU LINK HERE** <br><br>
+To experience Local Heroes please visit our launched application via  [this link](https://local-heroes-prjct2.herokuapp.com) <br><br>
 ✨Wahlah! That's it!✨ <br><br>
 🌇 🏕️ Now go enjoy your next adventurer!  ✅🔥 <br>
 ## Visual Studio Code
