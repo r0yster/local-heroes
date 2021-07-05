@@ -4,9 +4,13 @@ const Category = require('./Category');
 const City = require('./City');
 const UserCities = require('./UserCities');
 
-// User.belongsTo(Location, {
-//     foreignKey: 'city'
-// });
+User.hasOne(UserCities);
+
+UserCities.belongsTo(User);
+
+UserInterests.belongsTo(User);
+
+User.hasMany(UserInterests);
 
 // Location.hasMany(User, {
 //    foreignKey: 'city'

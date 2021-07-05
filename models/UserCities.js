@@ -12,19 +12,16 @@ UserCities.init(
             primaryKey: true,
             autoIncrement: true
         },
-        city_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'city',
-                key: 'id'
-            }
+        city_name: {
+            type: DataTypes.STRING,
         },
         user_id: {
             type: DataTypes.INTEGER,
             references: {
                 model: 'user',
                 key: 'id'
-            }
+            },
+            unique: true
         },
     },
     {
