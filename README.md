@@ -26,6 +26,31 @@ To install please visit the [Local Heroes](https://github.com/r0yster/local-hero
 To experience Local Heroes please visit our launched application via  [this link](https://local-heroes-prjct2.herokuapp.com) <br><br>
 ✨Wahlah! That's it!✨ <br><br>
 🌇 🏕️ Now go enjoy your next adventurer!  ✅🔥 <br>
+
+## Test Data
+The database is prepopulated with the following users:
+![image](https://user-images.githubusercontent.com/10663977/124418724-bda07180-dd21-11eb-8475-8710ed4afc43.png)
+
+That have the following interests:
+
+![image](https://user-images.githubusercontent.com/10663977/124418789-de68c700-dd21-11eb-9940-db2f23712bfd.png)
+
+1 - Food & Beverage
+
+2 - Arts & Culture
+
+3 - Music
+
+4 - History
+
+Sample Entry:
+
+Current City? Houston
+
+What are your interests? Arts & Culture, Music
+
+Would populate user_ids - 8 (test user3) and 12 (Billy Bob)
+
 ## Visual Studio Code
 [Visual Studio Code](https://code.visualstudio.com/) (VSC) was used as to create and develeop Local Heroes. VSC is an lightning fast FREE open-source editor designed by [Microsoft](https://www.microsoft.com/en-us/) with developers in mind. Visual Studio code allows developers to easily apply the edit-build-debug cycle, resulting in more productivity on your ideas.
 
