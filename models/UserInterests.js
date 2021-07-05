@@ -24,9 +24,9 @@ UserInterests.init(
             references: {
                 model: 'user',
                 key: 'id'
-            }
-        },
-  
+            },
+            unique: true
+        }  
     },
     {
         sequelize,
