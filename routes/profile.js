@@ -1,35 +1,113 @@
-const { QueryTypes } = require('sequelize');
+const { QueryTypes, Op, Sequelize } = require('sequelize');
 const express = require ('express');
 const router = express.Router();
 const sequelize = require('../config/connection.js');
 
-const { User, Category, UserInterests, UserCities } = require('../models')
+const { User, Category, UserInterests, UserCities } = require('../models');
+const { raw } = require('express');
 
 // [GET] /profile
 router.get('/', async (req, res) => {
-    const userId = req.user.id;
-    const users = await sequelize.query(`
-        SELECT user_id, user.first_name, user.last_name FROM 
-            (SELECT DISTINCT user_id FROM UserInterests WHERE category_id IN (
-                SELECT DISTINCT category_id FROM UserInterests WHERE user_id = ${userId}
-            ) AND user_id != ${userId}) user_common_interests
-        INNER JOIN user WHERE user.id = user_common_interests.user_id`, { type: QueryTypes.SELECT }
-    );
-    console.log(users);
-    res.render('profile', { users })
+
+    const currUserId = req.user.id;
+    let currInterestsArr = [];
+    let matchedUserInterestsArr = [];
+
+    const currUser = await User.findOne({
+        where: {
+            id: currUserId
+        }
+    })
+
+    const currCity = await UserCities.findOne({
+        attributes: [
+            'city_name'
+        ],
+        where: {
+            user_id: currUserId
+        },
+        raw: true
+    });
+
+    const currInterests = await UserInterests.findAll({
+        attributes: [
+            'category_id'
+        ],
+        where: {
+            user_id: currUserId
+        },
+        raw: true
+    });
+
+    for (const interest of currInterests) {
+        currInterestsArr.push(interest.category_id);
+    };
+
+    const matchedUserInterests = await UserInterests.findAll({
+        attributes: [
+            [Sequelize.fn('DISTINCT', Sequelize.col('user_id')), 'user_id'],
+        ],
+        where: {
+            user_id: {
+                [Op.ne]: currUserId
+            },
+            category_id: {
+                [Op.in]: currInterestsArr
+            }
+        },
+    });
+
+    for (const userid of matchedUserInterests) {
+        matchedUserInterestsArr.push(userid.user_id);
+    }
+
+    // console.log('===================Matched Users=========================');
+    const matchedUsers = await User.findAll({
+        where: {
+            [Op.and]: [{
+                city: currCity.city_name
+            },
+            {
+                id: {
+                    [Op.in]: matchedUserInterestsArr
+                }
+            }]
+        }
+    });
+    // console.log(JSON.stringify(currUser));
+    res.render('profile', { matchedUsers, currUser });
 });
 
 // [POST] /profile/interests
 router.post('/interests', async (req, res) => {
     const body = req.body;
-    await UserCities.create({ user_id: req.user.id, city_id: body.cityId });
+    const checkUser = await UserCities.findOrCreate({ where: { user_id: req.user.id }});
+
+    if (checkUser[0].isNewRecord) {
+        await UserCities.create({ 
+            user_id: req.user.id, 
+            city_name: body.cityId });
+    } else {
+        await UserCities.update({ city_name: body.cityId }, {
+            where: {
+                user_id: req.user.id
+            }
+        });
+    }
+
+    await UserInterests.destroy({
+        where: {
+            user_id: req.user.id
+        }
+    });
+
     for (const interest of body.interests) {
         await UserInterests.create({
             user_id: req.user.id,
-            category_id: interest,
-            selected_city: city
+            category_id: interest
         });
-    }
+    };
+
     res.json({ msg: 'ok' });
 });
 

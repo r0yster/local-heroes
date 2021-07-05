@@ -36,7 +36,7 @@ app.use('/', require('./routes'))
 // 	return price;
 //   })
 
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
 	console.log(`Sequelize connected to MySQL successfully.`);
 	app.listen(PORT, () => console.log(`Server listening on http://localhost:${PORT}`));
 });

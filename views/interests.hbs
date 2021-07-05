@@ -29,10 +29,10 @@
 
     <div class="row align-items-center" style = "text-align: center">
         
-        {{!-- <div><h5>Current City?</h5></div>    
-        <div class="location">
-            <input type="text" style="width:500px; background-color:transparent;" id="city">
-        </div> --}}
+        <div><h5>Current City?</h5></div>    
+        <div>
+            <input type="text" id="city" style="width:500px; background-color:transparent;">
+        </div>
 
         <div><h5>What are your interests?</h5></div>
     
@@ -43,21 +43,16 @@
                     {{interest.category_name}}
                 </label><br>
             {{/each}}
-            <div class = "col-md">
+            {{!-- <div class = "col-md">
                 <label for="city">Select a city that you will visit: </label>
                  <select name="city" id="city">
                      {{#each cities as |city|}}
                         <option value="{{city.id}}">{{city.name}}</option>
                     {{/each}}
                  </select>
+            </div> --}}
             </div>
-            </div>
-                <a
-                class="d-block btn btn-dark btn-sm col-2 mx-auto"
-                href="#"
-                onclick="saveUserInterests()"
-                role="button"
-                >Next</a>
+                <a class="d-block btn btn-dark btn-sm col-2 mx-auto" onclick="saveUserInterests()" href="#" role="button">Next</a>
             </div>
     </div>
 </div>   
@@ -68,7 +63,7 @@
 
     const saveUserInterests = async () => {
         const interests = [];
-        const cityId = document.getElementById('city').value;
+        const cityId = document.getElementById('city').value.trim();
         if (!cityId) {
             return alert('Please enter a city');
         }
