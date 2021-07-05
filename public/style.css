@@ -1,6 +1,10 @@
+.btn-interests {
+  margin-bottom: 1rem;
+}
+
 .homepageH1 {
   font-family: Nunito;
-  font-style: Sem-bold;
+  font-style: Semi-bold;
   font-weight: 600;
   font-size: 72px;
   line-height: 98px;
@@ -15,13 +19,12 @@
   font-weight: 600;
   font-size: 36px;
   line-height: 49px;
-  color:White;
+  color: White;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .heroContainer {
   height: 75vh;
-  
 }
 
 .heroRow {
@@ -37,50 +40,6 @@
     font-size: 24px;
   }
 
-.btn-interests {
-  margin-bottom: 1rem;
-  }
-  
-  .homepageH1 {
-    font-family: Nunito;
-    font-style: Semi-bold;
-    font-weight: 600;
-    font-size: 72px;
-    line-height: 98px;
-    color: #598b9d;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 0;
-  }
-  
-  .homepageP {
-    font-family: Nunito;
-    font-style: Semi-bold;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 49px;
-    color:White;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  
-  .heroContainer {
-    height: 75vh;
-    
-  }
-  
-  .heroRow {
-    height: 100%;
-  }
-}
-
-  @media (max-width: 450px) {
-    .homepageH1 {
-      font-size: 48px;
-      line-height: 60px;
-    }
-    .homepageP {
-      font-size: 24px;
-    }
-  
   .home-btn {
     display: flex !important;
     flex-direction: row;
@@ -88,16 +47,16 @@
     inline-size: 450px;
     word-wrap: normal;
   }
-  }
-  
-  .homenav {
-    min-width: 100px;
-    margin: 10px
-  }
-  
-  .btn-lg {
-    font-size: 1rem;
-  }
+}
+
+.homenav {
+  min-width: 100px;
+  margin: 10px;
+}
+
+.btn-lg {
+  font-size: 1rem;
+}
 
 .home-btn {
   display: flex !important;
@@ -107,34 +66,19 @@
   word-wrap: normal;
 }
 
-
-nav {
-  background-color: #116466;
-}
-
 .homenav {
   min-width: 100px;
-  margin: 10px
+  margin: 10px;
 }
-
-
-
-/* .userOptions {
-  font-size: .8rem;
-} */
-
-/* .navbar {
-  color: #6794A4;
-} */
 
 .navH1 {
   font-family: Nunito;
-    font-style: Semi-bold;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 50px;
-    color: #598b9d;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-style: Semi-bold;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 50px;
+  color: #598b9d;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .nav-link {
@@ -142,7 +86,6 @@ nav {
 }
 
 nav {
-  
   color: #fff;
   padding: 30px 60px;
   display: flex;
@@ -167,7 +110,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: #0a4142;
+  color: #0a58ca;
   text-decoration: none;
 }
 
@@ -175,6 +118,10 @@ body {
   background-image: url("/assets/images/city.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -186,104 +133,6 @@ body {
   background-color: rgb(252, 242, 228);
   border: none;
   opacity: 0.8;
-}
-
-
-
-#submit {
-  padding: 8px;
-  margin: 0;
-  position: absolute;
-  top: 85%;
-  left: 44%;
-  width: 12%;
-  border-radius: 10px;
-  background-color: #116466;
-  border: none  ;
-  font-weight: bold;
-}
-
-#submit:hover {
-  background-color: rgb(229, 243, 243);
-
-}
-
-.card-body {
-  width: 85px;
-  height: 390px;
-  border: none;
-}
-
-#password1 {
-  width: 80%;
-  position: absolute;
-  margin-top: 18%;
-  left: 10%;
-  border: none;
-}
-
-#email1 {
-  width: 80%;
-  position: absolute;
-  margin-top: 6%;
-  left: 10%;
-  border: none;
-}
-
-#label1 {
-  font-size: 25px;
- padding: 2%;
- margin-left: 39%;
- margin-bottom: 80%;
- width: 80%;
- position: absolute;
- display: inline-flex;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- font-weight: bolder;
- color: #0a4142;
-}
-
-#label2 {
-  font-size: 25px;
-  position: absolute;
-  display: inline-flex;
-  margin-top: 14%;
-  margin-left: 43%;
-  font-weight: bolder;
-  color: #0a4142;
-}
-
- nav h4 ul {
-  display: flex;
-  flex-wrap: wrap;
-  text-decoration: none;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none; 
-}
-
-ul {
-    margin-left: 40%;
-    margin-right: 5%;
-    margin-top: 2%;
-    font-size: 15px;
-}
-#localheroes {
-  color: rgb(252, 247, 241);
-  padding: 10px;
-  margin-left: 5%;
-  margin-top: 1%;
-  width: 100%;
-  font-weight: bold;
-}
-
-
-nav {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 15px;
-  padding-bottom: 10px;
-  background: none;
 }
 
 .footer {
@@ -305,149 +154,35 @@ nav {
   opacity: 0.8;
 }
 
-
-#lastName {
-  width: 80%;
-  margin: 0%;
-  margin-left: 8%;
-  border: none;
-}
-
-#firstName {
-  width: 80%;
-  margin: 0%;
-  margin-left: 8%;
-  border: none;
-}
-
-#email {
-  width: 80%;
-margin: 0%; 
- margin-left: 8%;
-  border: none;
-}
-
-#password  {
-  width: 80%;
-  margin: 0%;
-  margin-left: 8%;
-  border: none;
-}
-
-#passwordConfirm  {
-  width: 80%;
-  margin: 0%;
-  margin-left: 8%;
-  border: none;
-}
-
-
-#label3 {
-  font-size: 15px;
-  padding: 1%;
-  width: 80%;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 8%;
-  color: #0a4142;
-}
-
-#label4 {
-  font-size: 15px;
-  padding: 1%;
-  width: 80%;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 8%;
-  color: #0a4142;
-  margin-top: 1%;
-}
-
-#label5 {
-  font-size: 15px;
-  padding: 1%;
-  width: 80%;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 8%;
-  color: #0a4142;
-  margin-top: 1%;
-}
-
-#label6 {
-  font-size: 15px;
-  padding: 1%;
-  width: 80%;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 8%;
-  color: #0a4142;
-  margin-top: 1%;
-}
-
+#label1,
+#label2,
+#label3,
+#label4,
+#label5,
+#label6,
 #label7 {
   font-size: 15px;
   padding: 1%;
   width: 80%;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bolder;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 8%;
+  margin-left: 1%;
   color: #0a4142;
-  margin-top: 1%;
 }
 
-#citystate {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-decoration: none;
-  justify-content: space-around;
-  align-items: center;
-  width: 30%;
-  margin-left: 8%;
-  padding: 2%;
-}
-
-
-#label8 {
-  font-size: 15px;
-  padding: 1%;
-  width: 80%;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 0%;
-  color: #0a4142;
-  margin-top: 1%;
-}
-
+#label8,
 #label9 {
   font-size: 15px;
   padding: 1%;
   width: 80%;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bolder;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 8%;
+  margin-left: 0%;
   color: #0a4142;
   margin-top: 1%;
 }
@@ -461,10 +196,44 @@ margin: 0%;
   width: 20%;
   border-radius: 10px;
   background-color: #116466;
-  border: none  ;
+  border: none;
   font-weight: bold;
 }
 
 #registerbtn:hover {
   background-color: antiquewhite;
+}
+
+#firstName,
+#lastName,
+#email,
+#password,
+#passwordConfirm {
+  width: 90%;
+  margin: 0%;
+  margin-left: 3%;
+  border: none;
+}
+
+#citystate {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-decoration: none;
+  align-items: center;
+  width: 30%;
+  margin-left: 3%;
+  padding-bottom: 5%;
+}
+
+#submit {
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #116466;
+  border: none;
+  font-weight: bold;
+}
+
+#submit:hover {
+  background-color: rgb(229, 243, 243);
 }
