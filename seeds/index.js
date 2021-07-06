@@ -1,5 +1,5 @@
 const seedCategories = require('./category-seeds');
-const seedCities = require('./city-seeds');
+const seedCities = require('./location-seeds');
 // const seedVenues = require('./venue-seeds');
 const seedUsers = require('./user-seeds');
 
